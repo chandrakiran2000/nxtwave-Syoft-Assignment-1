@@ -1,0 +1,86 @@
+
+
+.dashboard-card{
+    height: 100vh;
+    width: 100vw;
+}
+
+.header-card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    box-shadow: 0px 8px 40px rgba(7, 7, 7, 0.08);
+    padding: 8px 16px 8px 16px;
+    overflow-x: auto;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+}
+.header-card::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+.name{
+    color: #475569;
+    font-size: 30px;
+}
+.logo-img{
+    width: 150px;
+    height: 50px;
+    align-self: center;
+}
+.logout-btn{
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffffff;
+    height: 35px;
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 2px;
+    background-color: crimson;
+    border-radius: 8px;
+    border: none;   
+}
+.details-card{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.user-heading{
+    text-align: center;
+    font-size: 28px;
+}
+.details-text-card{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    
+}
+.text{
+    color: #64748b;
+    font-size: 20px;
+}
+
+@media screen and (max-width : 768px) {
+    .header-card{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .name{
+        font-size: 28px;
+        order: 2;
+    }
+    .logo-img{
+        width: 120px;
+        height: 40px;
+        order: 1;
+    }
+    .logout-btn{
+        order: 3; 
+    }
+}
